@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --primarycolor: #FFBD2F;
+    --secondarycolor: #FF3A44;
+    --headingcolor: #222222;
+    --paragraphcolor: #888888;
+    --listcolor: #333333;
+    --itemcolor: #0489CA;
+    --namecolor: #C6C6C6;
+    --bgcolor: #0B4C61;
+    --commoncolor: #fff;
+    --family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: var(--family);
+}
+
+button {
+    font-weight: var(--semibold);
+    font-size: 15px;
+    line-height: 16px;
+    color: var(--commoncolor);
+    background: var(--secondarycolor);
+    padding: 13px 25px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all linear .4s;
+}
+
+button:hover {
+    background: transparent;
+    border-color: var(--secondarycolor);
+    color: var(--secondarycolor);
+}
+
+/* =============================================================== */
+
+/* =============================
+    NAV PART CSS START
+======================================*/
+
+.navbar {
+    margin-top: 14px;
+    transition: all linear .7s;
+    -webkit-transition: all linear .7s;
+    -moz-transition: all linear .7s;
+    -ms-transition: all linear .7s;
+    -o-transition: all linear .7s;
+}
+
+.navbar .navbar-nav .nav-item a {
+    font-weight: var(--regular);
+    font-size: 15px;
+    line-height: 16px;
+    color: var(--listcolor);
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 8px;
+    background: var(--bgcolor);
+    top: -97%;
+    left: 5%;
+    border-radius: 0 0 10px 10px;
+    transition: all linear .4s;
+}
+
+.navbar .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    background: var(--commoncolor);
+    z-index: 999;
+    margin-top: 0;
+    transition: all linear .7s;
+    -webkit-transition: all linear .7s;
+    -moz-transition: all linear .7s;
+    -ms-transition: all linear .7s;
+    -o-transition: all linear .7s;
+}
+
+.nav-fixed .navbar-nav .nav-item a::after {
+    top: -18px;
+}
+
+/* =============================
+    NAV PART CSS END
+======================================*/
+
+/* =============================
+    BANNER PART CSS START
+======================================*/
+
+#banner {
+    margin-top: 90px;
+    margin-bottom: 120px;
+}
+
+#banner .banner-left h1 {
+    font-weight: var(--bold);
+    font-size: 45px;
+    color: var(--headingcolor);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#banner .banner-left p {
+    font-weight: var(--regular);
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--paragraphcolor);
+    padding-right: 23%;
+}
+
+#banner .banner-right {
+    position: relative;
+}
+
+#banner .banner-right .banner-photo {
+    border-radius: 20px;
+}
+
+#banner .banner-right i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    font-size: 35px;
+    background: var(--primarycolor);
+    line-height: 93px;
+    text-align: center;
+    color: var(--commoncolor);
+    z-index: 3;
+}
+
+#banner .banner-right::after {
+    position: absolute;
+    content: '';
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primarycolor);
+    opacity: .3;
+}
+
+#banner .banner-right .shape1 {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    z-index: -1;
+}
+
+#banner .banner-right .shape2 {
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+    z-index: -1;
+}
+
+/* =============================
+    BANNER PART CSS END
+======================================*/
+
+/* =============================
+    MEETING PART CSS START
+======================================*/
+
+#meet {
+    background: url(../images/bg.png) no-repeat top;
+    background-size: cover;
+    padding: 90px 0;
+    position: relative;
+    z-index: 3;
+}
+
+.heading h2 {
+    font-weight: var(--bold);
+    font-size: 38px;
+    color: var(--commoncolor);
+    padding: 0 19%;
+    text-transform: capitalize;
+    line-height: 48px;
+}
+
+.heading p {
+    font-weight: var(--regular);
+    font-size: 18px;
+    color: #D8D8D8;
+    padding: 0 26%;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+#meet .meet-item {
+    padding: 45px 35px;
+    background: var(--secondarycolor);
+    padding-bottom: 70px;
+    border-radius: 20px;
+}
+
+#meet .meet-item i {
+    width: 80px;
+    height: 85px;
+    line-height: 87px;
+    text-align: center;
+    background: var(--bgcolor);
+    border-radius: 10px/20px;
+    font-size: 32px;
+    color: var(--commoncolor);
+    margin-bottom: 17px;
+    position: relative;
+    z-index: 1;
+}
+
+#meet .meet-item i::after {
+    position: absolute;
+    content: '';
+    top: 22px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: var(--bgcolor);
+    opacity: .5;
+    border-radius: 10px/20px;
+    z-index: -1;
+}
+
+#meet .meet-item h3 {
+    font-weight: var(--semibold);
+    font-size: 22px;
+    color: var(--commoncolor);
+    line-height: 32px;
+}
+
+#meet .meet-item p {
+    font-weight: var(--regular);
+    font-size: 15px;
+    color: var(--commoncolor);
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+#meet .item2 {
+    background: var(--primarycolor);
+}
+
+#meet .item3 {
+    background: var(--itemcolor);
+}
+
+#meet .shape3 {
+    position: absolute;
+    bottom: 15%;
+    right: 6px;
+    z-index: -1;
+}
+
+#meet .shape4 {
+    position: absolute;
+    bottom: 15%;
+    left: 6px;
+    z-index: -1;
+}
+
+/* =============================
+   MEETING PART CSS END
+======================================*/
+
+/* =============================
+  TOOL PART CSS START
+======================================*/
+
+#tool {
+    background: var(--bgcolor);
+    padding-top: 85px;
+    position: relative;
+    z-index: 2;
+}
+
+#tool .heading h2 {
+    margin-bottom: 40px;
+}
+
+#tool .tool-item {
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#tool .tool-item h2 {
+    font-weight: var(--bold);
+    font-size: 38px;
+    color: var(--primarycolor);
+    width: 20%;
+    text-align: right;
+}
+
+#tool .tool-item .tool-text {
+    width: 76%;
+}
+
+#tool .tool-text h4 {
+    font-family: var(--semibold);
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--commoncolor);
+    padding-right: 10%;
+}
+
+#tool .tool-text p {
+    font-family: var(--semibold);
+    font-size: 15px;
+    line-height: 25px;
+    color: #D8D8D8;
+    padding-right: 11%;
+}
+
+#tool .tool-item2 {
+    background: #0C5F79;
+    padding: 20px 35px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#tool .tool-item2 h5 {
+    width: 30px;
+    height: 30px;
+    background: var(--itemcolor);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--commoncolor);
+}
+
+#tool .tool-item2 .item2 {
+    background: var(--primarycolor);
+}
+
+#tool .tool-item2 .item3 {
+    background: var(--secondarycolor);
+}
+
+#tool .tool-item2 .tool-text2 {
+    width: 90%;
+}
+
+#tool .tool-item2 .tool-text2 h4 {
+    font-weight: var(--semibold);
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--commoncolor);
+    margin-top: 5px;
+}
+
+#tool .tool-item2 .tool-text2 p {
+    font-weight: var(--regular);
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--commoncolor);
+}
+
+#tool .shape5 {
+    position: absolute;
+    bottom: 165px;
+    right: -37px;
+    z-index: -1;
+}
+
+/* =============================
+   TOOL PART CSS END
+======================================*/
+
+/* =============================
+   NICE PART START
+======================================*/
+
+#nice {
+    padding-top: 110px;
+    padding-bottom: 75px;
+    background: var(--bgcolor);
+    position: relative;
+    z-index: 1;
+}
+
+#nice .heading h2 {
+    padding: 0 22%;
+}
+
+#nice .nice-left {
+    width: 100%;
+    height: 360px;
+    background: #0C5F79;
+    border-radius: 66% 34% 75% 25% / 30% 65% 35% 70%;
+    -webkit-border-radius: 66% 34% 75% 25% / 30% 65% 35% 70%;
+    -moz-border-radius: 66% 34% 75% 25% / 30% 65% 35% 70%;
+    -ms-border-radius: 66% 34% 75% 25% / 30% 65% 35% 70%;
+    -o-border-radius: 66% 34% 75% 25% / 30% 65% 35% 70%;
+    margin-top: 85px;
+    position: relative;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+#nice .nice-left .man {
+    position: absolute;
+    bottom: 0;
+    left: -27%;
+    transform: rotate(-12deg);
+    z-index: 0;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+}
+
+#nice .shape {
+    position: absolute;
+}
+
+#nice .shape6 {
+    position: absolute;
+    top: -120px;
+    left: 179px;
+    z-index: -1;
+}
+
+#nice .shape7 {
+    position: absolute;
+    top: -305px;
+    left: -121px;
+    z-index: -1;
+}
+
+#nice .nice-right {
+    margin-top: 80px;
+}
+
+#nice .nice-right i {
+    font-size: 50px;
+    color: var(--primarycolor);
+    margin-bottom: 20px;
+}
+
+#nice .nice-right h4 {
+    font-weight: var(--regular);
+    font-size: 22px;
+    line-height: 32px;
+    color: #C6C6C6;
+}
+
+#nice .nice-right h3 {
+    font-weight: var(--bold);
+    font-size: 24px;
+    color: var(--commoncolor);
+}
+
+#nice .nice-right ul li {
+    width: 15px;
+    height: 15px;
+    background: #0D6785;
+    display: inline-block;
+    margin-right: 9px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#nice .nice-right ul .first {
+    background: var(--primarycolor);
+}
+
+/* =============================
+   NICE PART CSS END
+======================================*/
+
+/* =============================
+   HELP PART START
+======================================*/
+
+#help {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: var(--bgcolor);
+}
+
+#help .help-main {
+    background: #0C5F79;
+    padding: 84px 0;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
+#help .help-main h2 {
+    font-weight: var(--bold);
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--commoncolor);
+    margin-bottom: 20px;
+}
+
+#help .help-main p {
+    font-weight: var(--regular);
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--commoncolor);
+}
+
+/* =============================
+  HELP PART CSS END
+======================================*/
+
+/* =============================
+  FOOTER PART CSS START
+======================================*/
+
+
+footer {
+    padding: 45px 0;
+    background: var(--bgcolor);
+    border-top: 1px solid #196781;
+    border-bottom: 1px solid #196781;
+}
+
+footer p {
+    font-weight: var(--regular);
+    font-size: 14px;
+    color: #E6E6E6;
+    line-height: 24px;
+    margin-top: 34px;
+}
+
+footer .ppp {
+    margin-top: 20px;
+}
+
+footer h4 {
+    font-weight: var(--semibold);
+    font-size: 18px;
+    color: var(--commoncolor);
+}
+
+footer ul {
+    margin-top: 30px;
+}
+
+footer a {
+    font-weight: var(--regular);
+    font-size: 14px;
+    color: #E6E6E6;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #E6E6E6;
+}
+
+footer i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px !important;
+    background: var(--commoncolor);
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    transition: all linear .4s;
+}
+
+footer i:hover {
+    background: var(--secondarycolor);
+    color: var(--commoncolor);
+}
+
+.copy-right {
+    padding: 25px 0;
+    background: var(--bgcolor);
+    text-align: center;
+}
+
+.copy-right p {
+    font-weight: var(--regular);
+    font-size: 14px;
+    color: #E6E6E6;
+    margin-bottom: 0;
+}
+
+/* =============================
+ FOOTER PART CSS END
+======================================*/
+.arrow {
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    color: var(--commoncolor);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 999;
+    background: var(--secondarycolor);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: rotate(-90deg);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    display: none;
+}
+.arrow:hover{
+    background: var(--headingcolor);
+}

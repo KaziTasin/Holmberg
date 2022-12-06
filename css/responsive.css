@@ -1,0 +1,426 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #tool .shape5 {
+        right: -50px;
+    }
+
+    #nice .shape6 {
+        left: 102px;
+    }
+
+    #nice .nice-left .man {
+        left: -48%;
+    }
+
+    .social {
+        margin-top: 48px;
+    }
+
+    /* ================================ */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+    #navbarSupportedContent {
+        text-align: center;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar .navbar-nav .nav-item a::after {
+        height: 3px;
+        top: 29px;
+        left: 0%;
+    }
+
+    #banner {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    #banner .banner-left p {
+        padding-right: 0%;
+    }
+
+    #banner .banner-right {
+        margin-top: 45px;
+    }
+
+    #banner .banner-right .shape1 {
+        display: none;
+    }
+
+    #banner .banner-right .shape2 {
+        display: none;
+    }
+
+    #meet .shape4 {
+        display: none;
+    }
+
+    #meet .shape3 {
+        display: none;
+    }
+
+    #tool .shape5 {
+        display: none;
+    }
+
+    .heading h2 {
+        padding: 0;
+        line-height: 40px;
+    }
+
+    .heading p {
+        padding: 0;
+    }
+
+    #meet .meet-item {
+        margin-bottom: 40px;
+    }
+
+    #tool {
+        padding-top: 0;
+    }
+
+    #tool .tool-item2 h5 {
+        margin: 0 -15px;
+    }
+
+    #nice {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    #nice .nice-right h4 {
+        font-size: 18px;
+    }
+
+    #nice .heading h2 {
+        padding: 0;
+    }
+
+    #nice .shape {
+        display: none;
+    }
+
+    #nice .nice-left .man {
+        left: -55%;
+    }
+
+    #nice .nice-left {
+        height: 330px;
+    }
+
+    #nice .nice-right {
+        margin-top: 20px;
+    }
+
+    #meet .meet-item {
+        padding-bottom: 40px;
+    }
+
+    #help .help-main {
+        padding: 80px 40px;
+    }
+
+    #help .help-main h2 {
+        font-size: 34px;
+    }
+
+    #help .help-main p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-toggler:hover {
+        text-decoration: none;
+        border: 0;
+    }
+
+    /* ===================================================== */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar .navbar-nav .nav-item a::after {
+        height: 3px;
+        top: 29px;
+        left: 0%;
+    }
+
+    #banner {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    #banner .banner-left h1 {
+        font-size: 40px;
+    }
+
+    #banner .banner-left p {
+        padding-right: 0%;
+    }
+
+    #banner .banner-right {
+        margin-top: 45px;
+    }
+
+    #banner .banner-right .shape1 {
+        display: none;
+    }
+
+    #banner .banner-right .shape2 {
+        display: none;
+    }
+
+    #meet .shape4 {
+        display: none;
+    }
+
+    #meet .shape3 {
+        display: none;
+    }
+
+    #tool .shape5 {
+        display: none;
+    }
+
+    .heading h2 {
+        padding: 0;
+        line-height: 40px;
+    }
+
+    .heading p {
+        padding: 0;
+    }
+
+    #meet .meet-item {
+        margin-bottom: 40px;
+    }
+
+    #tool {
+        padding-top: 0;
+    }
+
+    #tool .tool-item2 h5 {
+        margin: 0 -15px;
+    }
+
+    #nice {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    #nice .nice-right h4 {
+        font-size: 18px;
+    }
+
+    #nice .heading h2 {
+        padding: 0;
+    }
+
+    #nice .shape {
+        display: none;
+    }
+
+    #nice .nice-left {
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nice .nice-left .man {
+        left: -42%;
+    }
+
+    #nice .nice-right {
+        margin-top: 20px;
+    }
+
+    #meet .meet-item {
+        padding-bottom: 40px;
+    }
+
+    #help .help-main {
+        padding: 70px 20px;
+    }
+
+    #help .help-main h2 {
+        font-size: 34px;
+    }
+
+    #help .help-main p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-toggler:hover {
+        text-decoration: none;
+        border: 0;
+    }
+
+    /* ===================================================== */
+}
+
+
+@media (min-width: 320px) and (max-width: 575.99px) {
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar .navbar-nav .nav-item a::after {
+        height: 3px;
+        top: 29px;
+        left: 0%;
+    }
+
+    .navbar .navbar-brand img {
+        width: 80%;
+    }
+
+    #banner {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    #banner .banner-left h1 {
+        font-size: 29px;
+    }
+
+    #banner .banner-left p {
+        font-size: 15px;
+        padding-right: 0%;
+    }
+
+    #banner .banner-right {
+        margin-top: 45px;
+    }
+
+    #banner .banner-right .shape1 {
+        display: none;
+    }
+
+    #banner .banner-right .shape2 {
+        display: none;
+    }
+
+    #meet .shape4 {
+        display: none;
+    }
+
+    #meet .shape3 {
+        display: none;
+    }
+
+    #tool .shape5 {
+        display: none;
+    }
+
+    .heading h2 {
+        font-size: 32px;
+        padding: 0;
+        line-height: 40px;
+    }
+
+    .heading p {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    #meet .meet-item {
+        margin-bottom: 40px;
+    }
+
+    #tool {
+        padding-top: 0;
+    }
+
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    #tool .tool-item2 h5 {
+        margin: 0 -15px;
+    }
+
+    #nice {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    #nice .nice-right h4 {
+        font-size: 18px;
+    }
+
+    #nice .heading h2 {
+        padding: 0;
+    }
+
+    #nice .shape {
+        display: none;
+    }
+
+    #nice .nice-left {
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nice .nice-left .man {
+        left: -42%;
+    }
+
+    #nice .nice-right {
+        margin-top: 20px;
+    }
+
+    #meet .meet-item {
+        padding-bottom: 40px;
+    }
+
+    #help .help-main {
+        padding: 50px 20px;
+    }
+
+    #help .help-main h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #help .help-main p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    footer h4 {
+        margin-top: 30px;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-toggler:hover {
+        text-decoration: none;
+        border: 0;
+    }
+
+    /* ===================================================== */
+}
